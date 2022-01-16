@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "test_atcoder_sample",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "type": "shell",
+            "command": "${workspaceFolder}/AtCoder/onlinejudge/cptest.sh",
+            "args": [
+                "${relativeFileDirname}_${fileBasenameNoExtension}", 
+                "${file}",
+                "/home/zaemon1251/workspace/ac-library"
+            ]
+        },
+        // {
+        //     "type": "shell",
+        //     "label": "C/C++: g++-9 compile file",
+        //     "command": "/usr/bin/g++",
+        //     "args": [
+        //         "-std=gnu++17",
+        //         "-I",
+        //         "/home/zaemon1251/workspace/ac-library",
+        //         "-Wall",
+        //         "-Wextra",
+        //         "-Wshadow",
+        //         "-Wconversion",
+        //         "-fsanitize=undefined",
+        //         "-ggdb",
+        //         "${file}",
+        //         "-o",
+        //         "${fileDirname}/${fileBasenameNoExtension}"
+        //     ],
+        //     "problemMatcher": [
+        //         "$gcc"
+        //     ],
+        //     "group": {
+        //         "kind": "build",
+        //         "isDefault": false
+        //     }
+        // }
+    ]
+}
